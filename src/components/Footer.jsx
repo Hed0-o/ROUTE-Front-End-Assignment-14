@@ -22,7 +22,7 @@ export default function Footer() {
              transition-transform duration-300"
                   >
                     <img
-                      src="/public/logo.png"
+                      src="logo.png"
                       alt="Photography Logo"
                       className="w-full h-full object-cover"
                     />

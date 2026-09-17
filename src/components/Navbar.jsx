@@ -16,7 +16,7 @@ export default function Navbar() {
            group-hover:rotate-6 transition-transform duration-300"
                 >
                   <img
-                    src="/public/logo.png"
+                    src="logo.png"
                     alt="Photography Logo"
                     className="w-full h-full object-cover"
                   />
