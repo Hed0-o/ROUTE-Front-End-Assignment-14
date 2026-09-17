@@ -30,7 +30,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/ROUTE-Front-End-Assignment-14",
+    basename: "/ROUTE-Front-End-Assignment-14/",
   },
 );
 
