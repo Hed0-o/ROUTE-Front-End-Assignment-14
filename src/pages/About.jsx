@@ -1,7 +1,7 @@
 import AboutHero from "../components/AboutHero";
 import ContactCTA from "../components/ContactCTA";
-import Team from "../Components/Team";
-import Values from "../Components/Values";
+import Team from "../components/Team";
+import Values from "../components/Values";
 
 export default function About() {
   return (
