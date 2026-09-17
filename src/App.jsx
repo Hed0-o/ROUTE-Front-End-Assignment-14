@@ -7,27 +7,32 @@ import NotFound from "./pages/NotFound";
 import MainLayout from "./layouts/MainLayout";
 import BlogDetails from "./pages/BlogDetails";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Navigate to="/3dasa" replace />,
+    },
+    {
+      path: "3dasa",
+      element: <MainLayout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "blogs", element: <Blogs /> },
+        { path: "blogs/:slug", element: <BlogDetails /> },
+        { path: "about", element: <About /> },
+        { path: "*", element: <NotFound /> },
+      ],
+    },
+    {
+      path: "*",
+      element: <NotFound />,
+    },
+  ],
   {
-    path: "/",
-    element: <Navigate to="/3dasa" replace />,
+    basename: "/ROUTE-Front-End-Assignment-14",
   },
-  {
-    path: "3dasa",
-    element: <MainLayout />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: "blogs", element: <Blogs /> },
-      { path: "blogs/:slug", element: <BlogDetails /> },
-      { path: "about", element: <About /> },
-      { path: "*", element: <NotFound /> },
-    ],
-  },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
-]);
+);
 
 function App() {
   return (
